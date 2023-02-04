@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мастерская Рукодельницы</title>
+    {% block css_style %}
+    {% endblock %}
+    <meta name="description" content="Интернет магазин товаров ручной работы">
+</head>
+<body>
+    <div class="header">
+        <div class="header-in">
+            <div class="underlogo">
+                <a href="store/">
+                </a>
+            </div>
+            <div class="logo">
+                <a href="store/">
+                </a>
+            </div>
+            <div class="account">
+                <a href="person/">
+                </a>             
+            </div>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -20,5 +20,5 @@ from store.views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("store/", include('store.urls_conf')),
+    path("", include('store.urls_conf')),
 ]

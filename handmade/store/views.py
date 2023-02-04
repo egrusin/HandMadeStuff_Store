@@ -3,10 +3,10 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('<a align="center" link="/store/hello">hello<a>')
+    return render(request, 'store/storemask.html')
 
 
 def good_page(request, good: str) -> HttpResponse:
     """Динамический URL, принимает в параметрах название товара
     Возвращает его описание, мастера, даступность из базы данных товаров"""
-    return HttpResponse(f'Страница товара {good}')
+    return render(request, 'store/goodmask.html', {'good': good})
