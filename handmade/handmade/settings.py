@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "store.apps.StoreConfig",
     "client.apps.ClientConfig",
-    "saler.apps.SalerConfig",
+    "author.apps.AuthorConfig",
 ]
 
 MIDDLEWARE = [
